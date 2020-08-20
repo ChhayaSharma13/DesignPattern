@@ -9,6 +9,11 @@ public class Basic {
 	 TaxCalculator calc = getCalculator();
 	 calc.calculatorTax();
 	 
+	 Account account = new Account();
+	 account.deposit(100);
+	 account.withdraw(20);
+	 System.out.println(account.getBalance());
+	 
 	 // to avoid tightly coupling use interfaces
 	 //Interface is a contract that specifies the capabilities that a class should provide
 		
