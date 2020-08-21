@@ -1,18 +1,18 @@
 
 public class MailService {
 	public void sendEmail() {
-		connect();
+		connect(1);
 		authenticate();
 		//sendEmail
 		disconnect();
 	}
-	public void connect() {
+	private void connect(int timeOut) {
 		System.out.println("Connect");
 	}
-	public void disconnect() {
+	private void disconnect() {
 		System.out.println("Disconnect");
 	}
-	public void authenticate() {
+	private void authenticate() {
 		System.out.println("Authenticate");
 	}
 }
