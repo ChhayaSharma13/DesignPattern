@@ -5,10 +5,13 @@ public class Main {
 	 user.name = "Chhaya";
 	 System.out.println(user.name);
 	 user.sayHello(" World");
-	 
+	// to avoid tightly coupling use interfaces
+	//Interface is a contract that specifies the capabilities that a class should provide
+	
 	 TaxCalculator calc = getCalculator();
 	 calc.calculatorTax();
 	 
+	 //Encapsulation
 	 Account account = new Account();
 	 account.deposit(100);
 	 account.withdraw(20);
@@ -17,11 +20,18 @@ public class Main {
 	 //We can change the implementation details without effecting main class won't be affected
 	 MailService mailService = new MailService();
 	 mailService.sendEmail();
-	 // to avoid tightly coupling use interfaces
-	 //Interface is a contract that specifies the capabilities that a class should provide
-		
+	 
+	 //Inheritance
+	 TextBox textBox = new TextBox();
+	 textBox.enable();
+	 
+	 //Polymorphism
+	 drawUIControl(new CheckBox());
 	}
 	public static TaxCalculator getCalculator() {
 		 return new TaxCalculator2019();
 	 }
+	public static void drawUIControl(UIControl control) {
+		control.draw();
+	}
 }
