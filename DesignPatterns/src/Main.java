@@ -1,3 +1,4 @@
+import memento.Editor;
 
 public class Main {
 	public static void main(String[] args) {
@@ -27,6 +28,14 @@ public class Main {
 	 
 	 //Polymorphism
 	 drawUIControl(new CheckBox());
+	 
+	 Editor editor = new Editor();
+	 editor.setContent("a");
+	 editor.setContent("b");
+	 editor.setContent("c");
+	 
+	 
+	 
 	}
 	public static TaxCalculator getCalculator() {
 		 return new TaxCalculator2019();
