@@ -1,3 +1,4 @@
+import StatePattern.BrushTool;
 import StatePattern.Canvas;
 import StatePattern.SelectionTool;
 import memento.Editor;
@@ -46,7 +47,7 @@ public class Main {
 	 System.out.println(editor.getContent());
 	 
 	 Canvas canvas = new Canvas();
-	 canvas.setCurrentTool(new SelectionTool());
+	 canvas.setCurrentTool(new BrushTool());
 	 canvas.MouseDown();
 	 canvas.MouseUp();
 	}
