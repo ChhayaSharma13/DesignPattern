@@ -1,0 +1,12 @@
+Open Closed Principle
+
+Open ------> For extension
+Closed ----> For modification
+
+Add new functionality without changing the existing code.
+which helps in making our application robust and extensible.
+
+Don't use design patterns blindly anywhere, use only when its necessary.
+Every pattern has a context.Use problem driven approach.
+
+Don't use design pattern anywhere it will increase complexity. And it creates Design Smell in application or Over Engineering in a solution. ----> Not a good thing
