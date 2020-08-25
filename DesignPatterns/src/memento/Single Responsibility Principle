@@ -1,0 +1,7 @@
+In order to maintainable software we need to design
+classes with Single Responsibility.
+
+Editor/ Originator-------> createState, restoreState
+ 
+EditorState / Memento---> content :  String (getting state from Editor class)
+History / Caretaker-------> for state management, states: list

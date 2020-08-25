@@ -1,6 +1,7 @@
 package memento;
 
 public class Editor {
+	//For storing current content of editor
 	private String content;
 
 	public String getContent() {
