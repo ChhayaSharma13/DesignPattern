@@ -1,3 +1,5 @@
+import StatePattern.Canvas;
+import StatePattern.SelectionTool;
 import memento.Editor;
 import memento.History;
 
@@ -43,6 +45,10 @@ public class Main {
 	 editor.restore(history.pop());
 	 System.out.println(editor.getContent());
 	 
+	 Canvas canvas = new Canvas();
+	 canvas.setCurrentTool(new SelectionTool());
+	 canvas.MouseDown();
+	 canvas.MouseUp();
 	}
 	public static TaxCalculator getCalculator() {
 		 return new TaxCalculator2019();
