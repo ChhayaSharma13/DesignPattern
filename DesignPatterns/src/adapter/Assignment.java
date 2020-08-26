@@ -10,7 +10,7 @@ public class Assignment implements Pen{
 		this.p = p;
 	}
 	public void writeAsssignment(String str) {
-		
+		p.write(str);
 	}
 	@Override
 	public void write(String str) {
