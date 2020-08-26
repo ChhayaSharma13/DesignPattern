@@ -14,5 +14,10 @@ public class Phone {
 		this.screenSize = screenSize;
 		this.battery = battery;
 	}
+	@Override
+	public String toString() {
+		return "Phone [os=" + os + ", ram=" + ram + ", processor=" + processor + ", screenSize=" + screenSize
+				+ ", battery=" + battery + "]";
+	}
 	
 }
