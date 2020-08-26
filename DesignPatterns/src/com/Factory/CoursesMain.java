@@ -5,5 +5,6 @@ public class CoursesMain {
 		CoursesFactory csf = new CoursesFactory();
 		Courses course = csf.getInstance("money");
 		course.modules();
+		
 	}
 }
