@@ -1,6 +1,6 @@
 package adapter;
 
-public class Assignment implements Pen{
+public class Assignment{
 	private Pen p;
 	
 	public Pen getP() {
@@ -12,9 +12,5 @@ public class Assignment implements Pen{
 	public void writeAsssignment(String str) {
 		p.write(str);
 	}
-	@Override
-	public void write(String str) {
-		// TODO Auto-generated method stub
-		
-	}
+
 }
