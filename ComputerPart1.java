@@ -12,6 +12,11 @@ interface Component{
 class Leaf implements Component{
 	int price;
 	String name;
+	public Leaf(int price, String name) {
+		super();
+		this.price = price;
+		this.name = name;
+	}
 	@Override
 	public void showPrice() {
 		// TODO Auto-generated method stub
@@ -34,6 +39,10 @@ class Composite implements Component{
 		for(Component c : components) {
 			c.showPrice();
 		}
+	}
+	public Composite(String name) {
+		super();
+		this.name = name;
 	}
 	
 }
