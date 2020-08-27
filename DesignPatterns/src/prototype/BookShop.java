@@ -3,7 +3,7 @@ package prototype;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookShop {
+public class BookShop implements Cloneable{
 	private String shopName;
 	List<Book> books = new ArrayList<>();
 	public String getShopName() {
@@ -31,5 +31,13 @@ public class BookShop {
 	public String toString() {
 		return "BookShop [shopName=" + shopName + ", books=" + books + "]";
 	}
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+	
+//	Overriding clone method
+	
 	
 }
