@@ -31,10 +31,16 @@ public class BookShop implements Cloneable{
 	public String toString() {
 		return "BookShop [shopName=" + shopName + ", books=" + books + "]";
 	}
+//	This type of cloning gives shallow cloning
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
+	protected BookShop clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
-		return super.clone();
+		//return super.clone();
+		BookShop shop  = new BookShop();
+		for(Book b: this.getBooks()) {
+			shop.getBooks().add(b);
+		}
+		return shop;
 	}
 	
 //	Overriding clone method
