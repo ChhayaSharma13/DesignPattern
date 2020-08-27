@@ -3,10 +3,25 @@ package composite;
 public class ComputerPart1 {
 
 }
-class Leaf{
+interface Component{
+	void showPrice();
+}
+class Leaf implements Component{
+
+	@Override
+	public void showPrice() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
 	
-class Composite{
+class Composite implements Component{
+
+	@Override
+	public void showPrice() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
