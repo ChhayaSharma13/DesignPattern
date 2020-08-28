@@ -4,17 +4,16 @@ public class AccountBuilder {
 	int accountNo;
 	String name;
 	String branch;
-	public AccountBuilder(int accountNo, String name, String branch, String typeOfAccount, double interestRate) {
-		super();
-		this.accountNo = accountNo;
-		this.name = name;
-		this.branch = branch;
-		this.typeOfAccount = typeOfAccount;
-		this.interestRate = interestRate;
-	}
-
 	String typeOfAccount;
 	double interestRate;
+	/*
+	 * public AccountBuilder(int accountNo, String name, String branch, String
+	 * typeOfAccount, double interestRate) { super(); this.accountNo = accountNo;
+	 * this.name = name; this.branch = branch; this.typeOfAccount = typeOfAccount;
+	 * this.interestRate = interestRate; }
+	 */
+
+	
 	public AccountBuilder setAccountNo(int accountNo) {
 		this.accountNo = accountNo;
 		return this;
@@ -36,7 +35,7 @@ public class AccountBuilder {
 		return this;
 	}
 	
-	public AccountBuilder getAccount() {
-		return new AccountBuilder(accountNo, branch, branch, branch, interestRate);
+	public Account getAccount() {
+		return new Account(accountNo, branch, branch, branch, interestRate);
 	}
 }
